@@ -1,16 +1,9 @@
-#To make python 2 and python 3 compatible code
 from __future__ import division
 from __future__ import absolute_import
 
 #Imports
 import sys
-if sys.version_info[0] < 3:#e.g python version <3
-    import cv2
-else:
-    import cv2
-    from cv2 import cv2
-# pylint: disable=E1101
-# pylint: disable=E0401
+import cv2
 # Disabling linting that is not supported by Pylint for C extensions such as OpenCV. See issue https://github.com/PyCQA/pylint/issues/1955 
 import numpy
 import requests
